@@ -53,6 +53,7 @@ while True:
         for circle in circles[0]:
             x, y, r = circle
             cv2.circle(frame, (int(x), int(y)), int(r), (0, 255, 0), 2)
+            print(x,"x",y ,"y")
 
     cv2.imshow('Frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
