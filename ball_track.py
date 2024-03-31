@@ -5,7 +5,7 @@ from Models.tracknet2 import trackNet
 # Load the trackNet model
 n_classes = 256
 save_weights_path = 'WeightsTracknet/model.1'
-width, height = 640, 360
+width, height = 640, 480
 m = trackNet(n_classes, input_height=height, input_width=width)
 m.compile(loss='categorical_crossentropy', optimizer='adadelta', metrics=['accuracy'])
 m.load_weights(save_weights_path)
